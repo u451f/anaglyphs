@@ -1,0 +1,54 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="anaglyph.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+	<h1><a href="https://en.wikipedia.org/wiki/Anaglyph_3D" target="_blank">Anaglyph</a> CSS & JS</h1>
+	<img src="http://curlybracket.net/files/2015/08/Westpaket_Conny_Chanel_Lichtenberg.jpg" alt="" />
+	<img src="http://curlybracket.net/files/2015/08/Westpaket_1986_ConnyHelgaTanteUschi.jpg" alt="" />
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Stereograph_as_an_educator.jpg/800px-Stereograph_as_an_educator.jpg" alt="" />
+	<p>
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	</p>
+    <ul>
+		<li><a href="https://css-tricks.com/color-filters-can-turn-your-gray-skies-blue/">Color filters</a></li>
+		<li><a href="http://www.3dtv.at/knowhow/AnaglyphComparison_de.aspx">Anaglyphen</a></li>
+	</ul>
+<script type="text/javascript" src="anaglyph.js"></script>
+<svg class="defs-only">
+	<filter id="grey_ag_red" color-interpolation-filters="sRGB" x="0" y="0" height="100%" width="100%">
+		<feColorMatrix type="matrix"
+		values="1 1 1 0 0
+			0 0 0 0 0
+			0 0 0 0 0
+			0   0   0   1 0"/>
+	</filter>
+	<filter id="grey_ag_cyan" color-interpolation-filters="sRGB" x="0" y="0" height="100%" width="100%">
+		<feColorMatrix type="matrix"
+      	values="0 0 0 0  0 
+				1 1 1 0  0
+				1 1 1 0  0
+                0  0 0 1  0" />
+  	</filter>
+	<filter id="color_ag_red" color-interpolation-filters="sRGB" x="0" y="0" height="100%" width="100%">
+		<feColorMatrix type="matrix"
+      	values="0 0.7 0.3 0  0 
+				0 0 0 0  0
+				0 0 0 0  0
+                0  0 0 1  0" />
+		<feComponentTransfer>
+			<feFuncR type="gamma" exponent="0.5" amplitude="1" />
+		</feComponentTransfer>
+  	</filter>
+	<filter id="color_ag_cyan" color-interpolation-filters="sRGB" x="0" y="0" height="100%" width="100%">
+		<feColorMatrix type="matrix"
+      	values="0 0 0 0  0 
+				0 1 0 0  0
+				0 0 1 0  0
+                0  0 0 1  0" />
+  	</filter>
+</svg>
+</body>
+</html>
