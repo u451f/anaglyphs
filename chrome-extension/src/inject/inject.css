@@ -1,0 +1,78 @@
+/*
+ * 2015 u451f
+ */
+body.anaglyph {
+}
+
+.anaglyph, .anaglyph a {
+    text-shadow: -1px 0px 1px cyan;
+	color: rgba(255, 0, 0, 0.5);
+	-moz-transition-duration: 0.9s;
+	-webkit-transition-duration: 0.9s;
+	-ms-transition-duration: 0.9s;
+	-o-transition-duration: 0.9s;
+	transition-duration: 0.9s;
+}
+
+.anaglyph a:hover {
+    text-shadow: -1px 0px 1px red;
+	color: rgba(0, 255, 255, 0.5);
+}
+
+.anaglyph-image {
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	overflow: hidden;
+    padding-right: 0.9%;
+    box-sizing: border-box;
+    margin: 0 0.9% 1em auto;
+}
+
+.anaglyph-image img {
+	width: 100%;
+	height: auto;
+}
+
+.anaglyph-image .red {
+	position: absolute;
+	top: 0;
+	left: -0.9%;
+	opacity: 0.5;
+}
+
+.anaglyph-image .cyan {
+    -moz-filter: url(#color_ag_cyan");
+    -o-filter: url("#color_ag_cyan");
+    -ms-filter: url("#color_ag_cyan");
+    -webkit-filter: url("#color_ag_cyan");
+	filter: url("#color_ag_cyan");
+}
+
+.anaglyph-image .red {
+ 	-webkit-filter: url("#color_ag_red");
+    -moz-filter: url("#color_ag_red");
+    -o-filter: url("#color_ag_red");
+    -ms-filter: url("#color_ag_red");
+    filter: url("#color_ag_red");
+}
+
+.grey .anaglyph-image .cyan {
+    -moz-filter: url("#grey_ag_cyan");
+    -o-filter: url("#grey_ag_cyan");
+    -ms-filter: url("#grey_ag_cyan");
+    -webkit-filter: url("#grey_ag_cyan");
+	filter: url("#grey_ag_cyan");
+}
+
+.grey .anaglyph-image .red {
+ 	-webkit-filter: url("#grey_ag_red");
+    -moz-filter: url("#grey_ag_red");
+    -o-filter: url("#grey_ag_red");
+    -ms-filter: url("#grey_ag_red");
+    filter: url("#grey_ag_red");
+}
+
+.defs-only {
+	display: none;
+}
