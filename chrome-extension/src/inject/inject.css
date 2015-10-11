@@ -1,9 +1,6 @@
 /*
  * 2015 u451f
  */
-body.anaglyph {
-}
-
 .anaglyph, .anaglyph a {
     text-shadow: -1px 0px 1px cyan;
 	color: rgba(255, 0, 0, 0.5);
@@ -30,8 +27,8 @@ body.anaglyph {
 }
 
 .anaglyph-image img {
-	width: 100%;
-	height: auto;
+	/*width: 100%;*/
+	/*height: auto;*/
 }
 
 .anaglyph-image .red {
