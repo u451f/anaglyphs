@@ -3,22 +3,35 @@
  */
 body.anaglyph {
     background-color: lightgoldenrodyellow;
-    margin-left: 20px;
+}
+
+span.caption {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    padding: 1em;
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
 }
 
 .anaglyph, .anaglyph a {
-    text-shadow: -1px 0px 1px cyan;
-	color: rgba(255, 0, 0, 0.5);
-	-moz-transition-duration: 0.9s;
-	-webkit-transition-duration: 0.9s;
-	-ms-transition-duration: 0.9s;
-	-o-transition-duration: 0.9s;
-	transition-duration: 0.9s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-ms-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+    text-shadow: -1px 0px 1px red;
+    -webkit-filter: drop-shadow(2px 0px 1px cyan);
+    filter: drop-shadow(2px 0px 1px cyan);
+	letter-spacing: 0.1em;
 }
 
 .anaglyph a:hover {
-    text-shadow: -1px 0px 1px red;
-	color: rgba(0, 255, 255, 0.5);
+    text-shadow: -1px 0px 1px cyan;
+    -webkit-filter: drop-shadow(2px 0px 1px red);
+    filter: drop-shadow(2px 0px 1px red);
 }
 
 .anaglyph-image {
@@ -26,9 +39,9 @@ body.anaglyph {
 	max-width: 100%;
 	height: auto;
 	overflow: hidden;
-    padding-right: 0.9%;
     box-sizing: border-box;
-    margin: 0 0.9% 1em auto;
+    margin: 0 auto 1em;
+	/*padding: 0 0 0 10px;*/
 }
 
 .anaglyph-image img {
@@ -36,10 +49,17 @@ body.anaglyph {
 	height: auto;
 }
 
+.anaglyph-translate .red {
+	-moz-transform: skewX(-2deg) skewY(0) translate3d(-10px,0px,0px);
+	-webkit-transform: skewX(-2deg) skewY(0) translate3d(-10px,0px,0px);
+    transform: skewX(-2deg) skewY(0) translate3d(-10px,0px,0px);
+	transform-origin: center center;
+}
+
 .anaglyph-image .red {
 	position: absolute;
 	top: 0;
-	left: -0.9%;
+	left: 0;
 	opacity: 0.5;
 }
 
@@ -47,12 +67,12 @@ body.anaglyph {
     -moz-filter: url("#color_ag_cyan");
     -o-filter: url("#color_ag_cyan");
     -ms-filter: url("#color_ag_cyan");
-    -webkit-filter: url("#color_ag_cyan");
+    -webkit-filter: url("#color_ag_cyan") brightness(1.2);
 	filter: url("#color_ag_cyan");
 }
 
 .anaglyph-image .red {
- 	-webkit-filter: url("#color_ag_red");
+ 	-webkit-filter: url("#color_ag_red") brightness(1.2) contrast(1.2);
     -moz-filter: url("#color_ag_red");
     -o-filter: url("#color_ag_red");
     -ms-filter: url("#color_ag_red");
