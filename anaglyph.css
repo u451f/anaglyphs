@@ -8,16 +8,26 @@
 	-ms-transition-duration: 0.4s;
 	-o-transition-duration: 0.4s;
 	transition-duration: 0.4s;
-    text-shadow: -1px 0px 1px red;
-    -webkit-filter: drop-shadow(2px 0px 1px cyan);
-    filter: drop-shadow(2px 0px 1px cyan);
-	letter-spacing: 0.1em;
+	letter-spacing: 0.05em;
+	color: rgba(255, 0, 0, 0.5);
+	text-shadow: 5px 0 0 rgba(0, 255, 255, 0.5);
+}
+
+/* adjust margins because we hide the skew of the images like this */
+.anaglyph h1,
+.anaglyph h2,
+.anaglyph h3,
+.anaglyph p,
+.anaglyph blockquote,
+.anaglyph pre,
+.anaglyph ol,
+.anaglyph ul {
+	margin-left: 25px;
+	margin-right: 25px;
 }
 
 .anaglyph a:hover {
-    text-shadow: -1px 0px 1px cyan;
-    -webkit-filter: drop-shadow(2px 0px 1px red);
-    filter: drop-shadow(2px 0px 1px red);
+	text-shadow: 5px 0 0 rgba(0, 255, 255, 0.9);
 }
 
 .anaglyph-image {
@@ -27,6 +37,27 @@
 	overflow: hidden;
     box-sizing: border-box;
     margin: 0 auto 2.5em;
+}
+
+.anaglyph-image:before {
+	content: " ";
+	height: 100%;
+	width: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 99;
+}
+
+.anaglyph-image:after {
+	content: " ";
+	height: 100%;
+	width: 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #fff;
 }
 
 .anaglyph-image img {
@@ -39,10 +70,6 @@
 	-webkit-transform: skewX(-2deg) skewY(0) translate3d(-8px,0px,0px);
     transform: skewX(-2deg) skewY(0) translate3d(-8px,0px,0px);
 	transform-origin: center center;
-	/*
-	transform: skewX(1deg) skewY(-1deg) translate3d(-5px,0px,0px);
-	transform-origin: bottom right;
-	*/
 }
 
 .anaglyph-image .red {
