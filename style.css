@@ -9,9 +9,14 @@ body {
 	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
 	line-height: 1.6em;
-    width: 80%;
-    margin: 2em auto;
+    margin: 2em auto 2em 12em;
     background-color: #fff;
+}
+
+h1, h2, h3, h4, h5,
+p, blockquote, pre,
+ul, ol {
+	margin-bottom: 1em;
 }
 
 h1 {
@@ -19,12 +24,6 @@ h1 {
     font-size: 1.6em;
     border-bottom: 0.25em solid;
     display: inline-block;
-}
-
-h1, h2, h3, h4, h5,
-p, blockquote, pre,
-ul, ol {
-	margin-bottom: 1em;
 }
 
 a {
@@ -46,7 +45,7 @@ span.caption {
     position: absolute;
     bottom: -1px;
     left: 0;
-    padding: .5em;
+    padding: .5em 25px;
     background: #fff;
     width: 100%;
     box-sizing: border-box;
@@ -54,11 +53,37 @@ span.caption {
 	font-size: 1em;
 }
 
-.menu ul {
+.anaglyph .menu ul {
 	list-style: none;
+	margin-left: 25px;
 }
 
 .menu ul li {
-	display: inline-block;
-	padding-right: 1em;
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+.header {
+    position: fixed;
+	background: #fff;
+	width: 100%;
+	top: 0;
+	padding-top: 2em;
+	padding-bottom: 0.1em;
+	z-index: 99;
+}
+
+.sidebar {
+	position: fixed;
+	left: 0;
+	top: 2.5em;
+	width: 11em;
+}
+
+.content {
+	padding-top: 5em;
+}
+
+.footer {
+
 }

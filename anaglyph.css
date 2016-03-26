@@ -19,10 +19,14 @@
 .anaglyph h3,
 .anaglyph p,
 .anaglyph blockquote,
-.anaglyph pre,
+.anaglyph pre {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
 .anaglyph ol,
 .anaglyph ul {
-	margin-left: 25px;
+	margin-left: 40px;
 	margin-right: 25px;
 }
 
