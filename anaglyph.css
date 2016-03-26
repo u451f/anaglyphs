@@ -1,5 +1,5 @@
 /*
- * 2015 u451f
+ * 2015-2016 u451f
  */
 
 .anaglyph, .anaglyph a {
@@ -80,35 +80,19 @@
 }
 
 .anaglyph-image .cyan {
-    -moz-filter: url("#color_ag_cyan");
-    -o-filter: url("#color_ag_cyan");
-    -ms-filter: url("#color_ag_cyan");
-    -webkit-filter: url("#color_ag_cyan") brightness(1.2);
-	filter: url("#color_ag_cyan");
+    -moz-filter: url("#color_ag_cyan") brightness(1.2) saturate(110%);
+    -o-filter: url("#color_ag_cyan") brightness(1.2) saturate(110%);
+    -ms-filter: url("#color_ag_cyan") brightness(1.2) saturate(110%);
+    -webkit-filter: url("#color_ag_cyan") brightness(1.2) saturate(110%);
+	filter: url("#color_ag_cyan") brightness(1.2) saturate(110%);
 }
 
 .anaglyph-image .red {
- 	-webkit-filter: url("#color_ag_red") brightness(1.2) contrast(1.2);
-    -moz-filter: url("#color_ag_red");
-    -o-filter: url("#color_ag_red");
-    -ms-filter: url("#color_ag_red");
-    filter: url("#color_ag_red");
-}
-
-.grey .anaglyph-image .cyan {
-    -moz-filter: url("#grey_ag_cyan");
-    -o-filter: url("#grey_ag_cyan");
-    -ms-filter: url("#grey_ag_cyan");
-    -webkit-filter: url("#grey_ag_cyan");
-	filter: url("#grey_ag_cyan");
-}
-
-.grey .anaglyph-image .red {
- 	-webkit-filter: url("#grey_ag_red");
-    -moz-filter: url("#grey_ag_red");
-    -o-filter: url("#grey_ag_red");
-    -ms-filter: url("#grey_ag_red");
-    filter: url("#grey_ag_red");
+ 	-webkit-filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%);
+    -moz-filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%);
+    -o-filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%);
+    -ms-filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%);
+    filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%);
 }
 
 .defs-only {

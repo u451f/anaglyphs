@@ -1,11 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
 	line-height: 1.6em;
     width: 80%;
-    margin: auto;
+    margin: 2em auto;
     background-color: #fff;
 }
 
@@ -14,6 +19,12 @@ h1 {
     font-size: 1.6em;
     border-bottom: 0.25em solid;
     display: inline-block;
+}
+
+h1, h2, h3, h4, h5,
+p, blockquote, pre,
+ul, ol {
+	margin-bottom: 1em;
 }
 
 a {
@@ -41,4 +52,13 @@ span.caption {
     box-sizing: border-box;
     z-index: 10;
 	font-size: 1em;
+}
+
+.menu ul {
+	list-style: none;
+}
+
+.menu ul li {
+	display: inline-block;
+	padding-right: 1em;
 }
