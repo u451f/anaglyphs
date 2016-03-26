@@ -1,20 +1,6 @@
 /*
  * 2015 u451f
  */
-body.anaglyph {
-    background-color: lightgoldenrodyellow;
-}
-
-span.caption {
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    padding: 1em;
-    background: #fff;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 10;
-}
 
 .anaglyph, .anaglyph a {
 	-moz-transition-duration: 0.4s;
@@ -40,8 +26,7 @@ span.caption {
 	height: auto;
 	overflow: hidden;
     box-sizing: border-box;
-    margin: 0 auto 1em;
-	/*padding: 0 0 0 10px;*/
+    margin: 0 auto 2.5em;
 }
 
 .anaglyph-image img {
@@ -50,10 +35,14 @@ span.caption {
 }
 
 .anaglyph-translate .red {
-	-moz-transform: skewX(-2deg) skewY(0) translate3d(-10px,0px,0px);
-	-webkit-transform: skewX(-2deg) skewY(0) translate3d(-10px,0px,0px);
-    transform: skewX(-2deg) skewY(0) translate3d(-10px,0px,0px);
+	-moz-transform: skewX(-2deg) skewY(0) translate3d(-8px,0px,0px);
+	-webkit-transform: skewX(-2deg) skewY(0) translate3d(-8px,0px,0px);
+    transform: skewX(-2deg) skewY(0) translate3d(-8px,0px,0px);
 	transform-origin: center center;
+	/*
+	transform: skewX(1deg) skewY(-1deg) translate3d(-5px,0px,0px);
+	transform-origin: bottom right;
+	*/
 }
 
 .anaglyph-image .red {
