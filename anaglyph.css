@@ -84,19 +84,19 @@
 }
 
 .anaglyph-image .cyan {
-    -moz-filter: url("#color_ag_cyan") brightness(1.2) saturate(110%);
-    -o-filter: url("#color_ag_cyan") brightness(1.2) saturate(110%);
-    -ms-filter: url("#color_ag_cyan") brightness(1.2) saturate(110%);
-    -webkit-filter: url("#color_ag_cyan") brightness(1.2) saturate(110%);
-	filter: url("#color_ag_cyan") brightness(1.2) saturate(110%);
+    -moz-filter: url("#color_ag_cyan") brightness(1.2) saturate(110%) !important;
+    -o-filter: url("#color_ag_cyan") brightness(1.2) saturate(110%) !important;
+    -ms-filter: url("#color_ag_cyan") brightness(1.2) saturate(110%) !important;
+    -webkit-filter: url("#color_ag_cyan") brightness(1.2) saturate(110%) !important;
+	filter: url("#color_ag_cyan") brightness(1.2) saturate(110%) !important;
 }
 
 .anaglyph-image .red {
- 	-webkit-filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%);
-    -moz-filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%);
-    -o-filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%);
-    -ms-filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%);
-    filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%);
+ 	-webkit-filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%) !important;
+    -moz-filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%) !important;
+    -o-filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%) !important;
+    -ms-filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%) !important;
+    filter: url("#color_ag_red") brightness(1.2) contrast(1.2) saturate(110%) !important;
 }
 
 .defs-only {
