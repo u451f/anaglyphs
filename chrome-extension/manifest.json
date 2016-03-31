@@ -1,9 +1,9 @@
 {
   "name": "Anaglyphs",
-  "version": "0.0.1",
+  "version": "0.1",
   "manifest_version": 2,
-  "description": "This extension simply converts a webpage into anaglyphs.",
-  "homepage_url": "http://curlybracket.net/2015/10/11/anaglyphs",
+  "description": "This extension converts webpage images into fake anaglyph images.",
+  "homepage_url": "http://curlybracket.net/2016/04/01/anaglyphs",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
