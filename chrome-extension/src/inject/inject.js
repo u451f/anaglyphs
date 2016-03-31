@@ -33,7 +33,9 @@ HTMLElement.prototype.wrap = function(elms) {
  * 2015 u451f
  */
 // add body class
-document.body.setAttribute('class', 'anaglyph');
+var b = document.body.getAttribute("class");
+b += " anaglyph";
+document.body.setAttribute('class', b);
 
 // select all images
 var images = document.querySelectorAll("img:not(.stereo)");
