@@ -33,11 +33,12 @@ HTMLElement.prototype.wrap = function(elms) {
  * 2015 u451f
  */
 // add body class
-document.body.setAttribute('class', 'anaglyph'); // for color anaglyphs
-// document.body.setAttribute('class', 'anaglyph grey'); // for grey anaglyphs
+document.body.setAttribute('class', 'anaglyph');
 
 // select all images
-var images = document.querySelectorAll("img");
+var images = document.querySelectorAll("img:not(.stereo)");
+
+// clone the other images.
 for (index = 0; index < images.length; index++) {
 	// set current class to Cyan
 	images[index].setAttribute('class','cyan');
@@ -48,7 +49,7 @@ for (index = 0; index < images.length; index++) {
 
 	// wrap cyan image
 	var anaglyphWrapper = document.createElement('div');
-	anaglyphWrapper.className = 'anaglyph-image';
+	anaglyphWrapper.className = 'anaglyph-image anaglyph-translate';
 	anaglyphWrapper.id = 'anaglyph-image-' + index;
 	anaglyphWrapper.wrap(images[index]);
 
